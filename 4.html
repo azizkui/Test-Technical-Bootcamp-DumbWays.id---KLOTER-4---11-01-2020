@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+
+.inventory {
+	font-size: 35px;
+}
+
+.menu-container {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu {
+	border: 1px solid #fff;
+	/* For debugging */
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links {
+	border: 1px solid #fff;
+	/* For debugging */
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login {
+	margin-left: 20px;
+}
+/* 
+.header-container {
+	color: #5995DA;
+	background-color: #D6E9FE;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	width: 900px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+} */
+
+.social,
+.logo,
+.subscribe {
+	border: 1px solid #5995DA;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.photo-grid-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.photo-grid {
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 40px;
+}
+
+.photo-grid-item {
+	border: 1px solid #fff;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 60px;
+}
+</style>
+<body>
+    <div class="menu-container">
+        <div class='menu'>
+            <div class='inventory'><b>RPM Motorcycle</b></div>
+            <div class='links'>
+                <div class='signup'>
+                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-info">Add
+                        Customer</button>
+                </div>
+                <div class='login'>
+                    <button type="button" data-toggle="modal" data-target="#myModal2" class="btn btn-info">Add
+                        Product</button>
+                </div>
+                <div class='login'>
+                    <button type="button" data-toggle="modal" data-target="#myModal3" class="btn btn-info">Add
+                        Brand</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Add Customer Button -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Customer</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Customer Name <input class="form-control" type="text"></p>
+                    <p>Address <textarea class="form-control" name="" id="address-supplier" cols="100%"
+                            rows="3"></textarea></p>
+                    <p>Phone <input class="form-control" id="phone-supplier" type="number"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Save Customer</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Add Customer Button -->
+    <!-- Start Add Product Button -->
+    <div class="modal fade login" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Product</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                        <p>Product Name <input class="form-control" id="company-name-supplier" type="text"></p>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Brand Name</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option value="1">Yamaha</option>
+                                <option value="">Honda</option>
+                                <option value="">Vespa</option>
+                            </select>
+                        </div>
+                        <p>Image <input class="form-control" id="phone-supplier" type="file"></p>
+                        <p>Color <input class="form-control" id="company-name-supplier" type="text"></p>
+                        <p>Specification <textarea class="form-control" name="" id="address-supplier" cols="100%"
+                                rows="3"></textarea></p>
+                        <p>Stock <input class="form-control" id="company-name-supplier" type="text"></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save Supplier</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Add Product Button -->
+    <!-- Start Add Brand Button -->
+    <div class="modal fade login" id="myModal3" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Brand</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                        <p>Brand Name <input class="form-control" id="company-name-supplier" type="text"></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save Brand</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Add Brand Button -->
+    <div class='photo-grid-container'>
+        <div class='photo-grid'>
+            <div class='photo-grid-item first-item'>
+                <a href=""><img src='mio.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+            <div class='photo-grid-item'>
+                <a href="" data-target="#myModalmio"><img src='vega.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+            <div class='photo-grid-item'>
+                <a href=""><img src='vespa.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+            <div class='photo-grid-item'>
+                <a href=""><img src='hondablade.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+            <div class='photo-grid-item last-item'>
+                <a href=""><img src='supragtr150.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+            <div class='photo-grid-item last-item'>
+                <a href=""><img src='suprax125.jpeg' /></a>
+                <button type="button" class="btn btn-success">Buy</button>
+            </div>
+        </div>
+    </div>
+    <!-- Start Product 1 Button -->
+    <div class="modal fade login" id="myModalmio" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Product</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+                        <p>Product Name <input class="form-control" id="company-name-supplier" type="text"></p>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Brand Name</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option value="1">Yamaha</option>
+                                <option value="">Honda</option>
+                                <option value="">Vespa</option>
+                            </select>
+                        </div>
+                        <p>Image <input class="form-control" id="phone-supplier" type="file"></p>
+                        <p>Color <input class="form-control" id="company-name-supplier" type="text"></p>
+                        <p>Specification <textarea class="form-control" name="" id="address-supplier" cols="100%"
+                                rows="3"></textarea></p>
+                        <p>Stock <input class="form-control" id="company-name-supplier" type="text"></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save Supplier</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Product 1 Button -->
+</body>
+
+</html>
