@@ -20,3 +20,21 @@ Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 
 
 # Jawaban Nomor 4
+
+* Clue kurang 1 tb penghubung antara motorcycle_tb dengan customer_tb
+
+![table booking - new table](https://user-images.githubusercontent.com/55979870/72206232-d548c200-34bd-11ea-9a63-3ece40904f92.png)
+
+### Tampilkan hasil dari query sebagai berikut :
+
+* Tampilkan seluruh data dari table motorcycle_tb
+
+![insert motorcycle_tb](https://user-images.githubusercontent.com/55979870/72206213-ad595e80-34bd-11ea-92c9-f5ce944cd0bd.png)
+
+* Tampilkan seluruh data motor berdasarkan brand tertentu
+
+
+
+* Tampilkan seluruh data customer, motor beserta brand motor 
+
+
