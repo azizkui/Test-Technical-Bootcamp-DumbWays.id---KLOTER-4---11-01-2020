@@ -33,6 +33,7 @@ Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 
 * Tampilkan seluruh data motor berdasarkan brand tertentu
 
+![asdij](https://user-images.githubusercontent.com/55979870/72206475-e941f300-34c0-11ea-8940-cc40bb0421c3.png)
 
 
 * Tampilkan seluruh data customer, motor beserta brand motor 
