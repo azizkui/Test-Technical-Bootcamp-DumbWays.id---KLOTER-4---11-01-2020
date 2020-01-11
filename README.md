@@ -37,5 +37,12 @@ Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 
 
 * Tampilkan seluruh data customer, motor beserta brand motor 
+### FRONT END RPM Motorcycle
 
+![Screenshot from 2020-01-11 22-28-26](https://user-images.githubusercontent.com/55979870/72206547-dbd93880-34c1-11ea-839d-715e6d92a9aa.png)
 
+![Screenshot from 2020-01-11 22-28-35](https://user-images.githubusercontent.com/55979870/72206548-dc71cf00-34c1-11ea-85d2-ab61ae4c0cad.png)
+
+![Screenshot from 2020-01-11 22-28-54](https://user-images.githubusercontent.com/55979870/72206549-dc71cf00-34c1-11ea-8f28-1e8356663dc0.png)
+
+![Screenshot from 2020-01-11 22-29-26](https://user-images.githubusercontent.com/55979870/72206550-dd0a6580-34c1-11ea-9641-9e21ef126596.png)
