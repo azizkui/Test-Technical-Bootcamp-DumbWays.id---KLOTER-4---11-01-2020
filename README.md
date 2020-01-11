@@ -2,12 +2,15 @@
 Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 
 # Jawaban Nomor 1
-* nodemon 1.js
+* node 1.js
 
-![Screenshot from 2020-01-11 19-38-11](https://user-images.githubusercontent.com/55979870/72204407-16cf7200-34aa-11ea-9634-514789da68ab.png)
+![1](https://user-images.githubusercontent.com/55979870/72204534-bc371580-34ab-11ea-8fbd-455d858788f1.png)
+
 
 # Jawaban Nomor 2 
+* node 2.js
 
+![2](https://user-images.githubusercontent.com/55979870/72204515-8b56e080-34ab-11ea-8271-9930c9072249.png)
 # Jawaban Nomor 3 
 
 # Jawaban Nomor 4
