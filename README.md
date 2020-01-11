@@ -1,4 +1,4 @@
-# Test Technical Bootcamp DumbWays.id - KLOTER 4 - 11/01/2020
+# Test Technical Bootcamp DumbWays.id - KLOTER 4 - 11 / 01 / 2020
 Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 
 # Jawaban Nomor 1
@@ -11,6 +11,10 @@ Jawaban Soal Test Bootcamp Dumbways kloter 4 - 2020
 * node 2.js
 
 ![2](https://user-images.githubusercontent.com/55979870/72204515-8b56e080-34ab-11ea-8271-9930c9072249.png)
+
+
 # Jawaban Nomor 3 
+
+
 
 # Jawaban Nomor 4
